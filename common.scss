@@ -1,0 +1,266 @@
+
+@mixin flexible($align, $item) {
+    display: flex;
+    justify-content: $align;
+    align-items: $item;
+}
+
+/*Остановился на разборе вот этих стилей*/
+.form {
+    &__title {
+        @include flexible(center, center);
+        padding-top: 40px;
+        padding-bottom: 21px;
+        &--account {
+            justify-content: flex-start;
+            padding-left: 30px;
+        }
+    }
+    &__fields {
+        display: flex;
+        flex-flow: column;
+        padding-left: 30px;
+        padding-right: 30px;
+        & > .form__input {
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+/*Конец блока разбора стилей*/
+
+/*@media screen and (min-width: 401px) and (max-width: 719px) {
+    .form {
+        &__cost {
+            @include flexible(center, center);
+        }
+        &__type-room {
+            margin-left: auto;
+        }
+        &__paymant {
+            margin-left: 70px;
+            margin-right: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .form {
+        &--block {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .form {
+        &--block {
+            width: 380px;
+        }
+    }
+}*/
+
+/*
+    Переписанные стили
+*/
+.main {
+    &__demo {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 140px;
+        & > .main__col {
+            padding-right: 40px;
+            &:last-child {
+                padding-top: 150px;
+                padding-right: 0;
+                margin-right: auto;
+            }
+        }
+    }
+    &__search,
+    &__selected-room {
+        padding: 150px 0 40px 0;
+    }
+    &__card {
+        margin-top: 27px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        width: 100%;
+        &__demo {
+            display: block;
+            width: 100%;
+            margin: 0;
+            & > .main__col {
+                padding: 0;
+                &:last-child {
+                    padding-top: 40px;
+                }
+            }
+        }
+        &__search,
+        &__selected-room,
+        &__sign-in {
+            @include flexible(center, center);
+        }
+        &__selected-room {
+            padding-top: 0;
+        }
+        &__card {
+            margin-top: 40px;
+            @include flexible(center, center);
+            &:last-child {
+                padding-bottom: 40px;
+            }
+        }
+    }
+}
+
+.form {
+    &__title {
+        &--upper {
+            padding-bottom: 0;
+        }
+    }
+    &__content {
+        margin: 0;
+        padding: 21px 30px 31px 30px;
+        border-color: transparent;
+        border-width: 0;
+    }
+    &__selected {
+        @include flexible(space-between, center);
+    }
+    &__people {
+        padding-top: 20px;
+    }
+    &__choise {
+        width: max-content;
+    }
+    &__arrive,
+    &__leave,
+    &__guests {
+        padding-top: 5.44px;
+    }
+    &__arrive .select__dropdown,
+    &__leave .select__dropdown {
+        z-index: 999;
+    }
+    &__submit {
+        width: 100%;
+        @include flexible(center, center);
+        padding: 20px 30px 30px 30px;
+        box-sizing: border-box;
+    }
+    &__account {
+        padding-bottom: 140px;
+    }
+    &__date-label,
+    &__input-date {
+        padding: 0 30px;
+    }
+    &__date-label {
+        margin: 23.56px 0 5px 0;
+    }
+    &__date {
+        padding-bottom: 20px;
+    }
+    &__radio-wrapper {
+        width: 100%;
+        height: max-content;
+        @include flexible(space-between, center);
+        padding-top: 10px;
+    }
+    &__email {
+        padding-top: 5px;
+    }
+    &__password {
+        padding-top: 10px;
+    }
+    &__sign {
+        @include flexible(space-between, center);
+        padding: 30px;
+        &--upper {
+            padding-top: 0;
+        }
+    }
+    &__cost {
+        @include flexible(space-between, center);
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    &__price {
+        margin-top: 20.56px;
+    }
+    &__total {
+        @include flexible(space-between, baseline);
+    }
+    &__total + &__submit {
+        padding: 20px 0 0 0;
+    }
+    &__stripe {
+        margin: 0 5px 0 4px;
+    }
+    &__toggler {
+        @include flexible(space-between, center);
+        padding: 10px 90px 0 30px;
+    }
+    &__el-box {
+        &:first-child {
+            margin-left: 30px;
+            &  .cm-radio__text-box {
+                padding-left: calc(10px * 2);
+            }
+        }
+        &:last-child {
+            display: flex;
+            margin-right: auto;
+            margin-left: calc(calc(20px * 2.5) + 20px);
+            padding-left: 20px;
+            &  .cm-radio__text-box {
+                padding-left: calc(9.74px * 2);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    form {
+        width: max-content;
+    }
+
+    .form {
+        &__account {
+            @include flexible(center, center);
+            padding-bottom: 40px;
+        }
+        &__sign {
+            display: flex;
+        }
+        &--fixed {
+            width: 380px;
+        }
+    }
+}
+
+.price-list {
+    &__item {
+        padding-bottom: 10px;
+        &:last-child {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+/*По необходимости скрываем поля отображения текущей и будущей дат*/
+.calendar__input {
+    display: none !important;
+}
+
+/*
+    Конец моих переписанных стилей
+*/

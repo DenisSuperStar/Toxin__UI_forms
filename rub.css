@@ -1,0 +1,26 @@
+.rub--primary {
+  position: relative;
+}
+
+.rub::after, .rub--primary::after {
+  content: "\f158";
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: bold;
+}
+
+.rub::after {
+  font-size: 12px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.rub--primary::after {
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=rub.css.map */

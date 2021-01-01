@@ -1,0 +1,40 @@
+.card {
+  width: 277px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background: #fff;
+  -webkit-box-shadow: 0 10px 20px rgba(31, 32, 65, 0.12);
+          box-shadow: 0 10px 20px rgba(31, 32, 65, 0.12);
+  border-radius: 4px;
+}
+
+.card__section-paymant, .card__section-rating {
+  padding: 20px 17px 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__stars, .card__count-reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__hr {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=card.css.map */

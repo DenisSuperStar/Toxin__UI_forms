@@ -1,0 +1,24 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    &__text {
+        &--specific {
+            width: 210px;
+        }
+    }
+}
+
+/*@media screen and (min-width: 401px) and (max-width: 719px) {
+    .item {
+        &__text {
+            margin-right: 25px;
+        }
+    }
+}*/

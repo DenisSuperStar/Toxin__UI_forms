@@ -1,0 +1,104 @@
+.select {
+  position: relative;
+  background: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.25);
+  width: 150px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+}
+
+.select--long {
+  width: 320px;
+}
+
+.select--long .select__dropdown {
+  z-index: 99;
+}
+
+.select__input {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+}
+
+.select__text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.select__icon {
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select__icon::after {
+  content: "\f078";
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.select__dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 45px;
+  border-left: 1px solid rgba(31, 32, 65, 0.25);
+  border-right: 1px solid rgba(31, 32, 65, 0.25);
+  border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.select__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.select__item {
+  padding-top: 11.56px;
+  padding-left: 15px;
+  padding-bottom: 8.44px;
+  background: #fff;
+  z-index: 9999;
+}
+
+.close {
+  overflow: hidden;
+}
+/*# sourceMappingURL=select.css.map */

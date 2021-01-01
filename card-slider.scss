@@ -1,0 +1,21 @@
+.card-slider {
+    &__img {
+        width: 100%;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &--no-arrows {
+        & > .slick-list {
+            &::before,
+            &::after {
+                content: none;
+            }
+            & + .slick-next {
+                top: 0;
+            }
+        }
+    }
+}

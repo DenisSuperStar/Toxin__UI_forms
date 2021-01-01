@@ -1,0 +1,51 @@
+@mixin pseudo_icon {
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@mixin bordered_icon {
+    border-top: 1px solid rgba(31, 32, 65, 0.25);
+    border-right: 1px solid rgba(31, 32, 65, 0.25);
+    border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+/*Создать новый файл компонента и перенести в него*/
+.date-field {
+    position: relative;
+    &__input {
+        width: 100%;
+        height: 46px;
+        background: #fff;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        color: rgba(31, 32, 65, 0.25);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 18px;
+        font-family: "Montserrat", sans-serif;
+        padding-top: 12px;
+        padding-left: 15px;
+        padding-bottom: 8px;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__empty {
+        display: inline-block;
+        @include pseudo_icon();
+        pointer-events: none;
+        &::after {
+            content: "";
+            @include pseudo_icon();
+            @include bordered_icon();
+            border-radius: 4px;
+        }
+    }
+}

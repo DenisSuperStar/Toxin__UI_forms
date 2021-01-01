@@ -1,0 +1,43 @@
+@mixin flexible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cm-button {
+    width: 320px;
+    height: 44px;
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 45px;
+        &--reserved {
+            padding: 0 3.56rem;
+        }
+    }
+    &__icon {
+        &::after {
+            content: "\f061";
+            font-family: "Font Awesome 5 Pro";
+            color: #fff;
+            font-size: 24px;
+            width: 44px;
+            height: 44px;
+            @include flexible();
+        }
+    }
+}

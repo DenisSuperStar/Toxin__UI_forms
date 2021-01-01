@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*Создать новый файл компонента и перенести в него*/
+.date-field {
+  position: relative;
+}
+
+.date-field__input {
+  width: 100%;
+  height: 46px;
+  background: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  color: rgba(31, 32, 65, 0.25);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 18px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 12px;
+  padding-left: 15px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.date-field__input:focus {
+  outline: none;
+}
+
+.date-field__empty {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.date-field__empty::after {
+  content: "";
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 1px solid rgba(31, 32, 65, 0.25);
+  border-right: 1px solid rgba(31, 32, 65, 0.25);
+  border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+/*# sourceMappingURL=date-field.css.map */

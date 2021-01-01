@@ -1,0 +1,171 @@
+.slick-slider {
+  width: 100%;
+  position: relative;
+}
+
+.slick-slider__img {
+  outline: none;
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.slick-slider__img:focus {
+  outline: none;
+}
+
+.slick-active {
+  left: 0 !important;
+}
+
+.slick-list {
+  overflow: hidden;
+  width: 100%;
+  height: 157px;
+}
+
+.slick-list::before, .slick-list::after {
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  color: #fff;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  margin: 55px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.slick-list::before {
+  content: "\f104";
+  left: 0;
+}
+
+.slick-list::after {
+  content: "\f105";
+  right: 0;
+}
+
+.slick-dots {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  z-index: 999;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: 0;
+  margin-right: 16.61px;
+  margin-bottom: 16.61px;
+}
+
+.slick-dots:focus {
+  outline: none;
+}
+
+.slick-dots > li {
+  display: block;
+  width: 7.5px;
+  height: 7.5px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-dots > li:focus {
+  outline: none;
+}
+
+.slick-dots > li:last-child {
+  margin-right: 0;
+}
+
+.slick-dots > li > button {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 5px rgba(31, 32, 65, 0.3);
+          box-shadow: 0 5px 5px rgba(31, 32, 65, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slick-dots > li > button:focus {
+  outline: none;
+}
+
+.slick-prev, .slick-next {
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  padding: 0;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  -webkit-transition: all .6s ease-in;
+  transition: all .6s ease-in;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background: #000;
+  opacity: 0.6;
+}
+
+.slick-prev:focus, .slick-next:focus {
+  outline: none;
+}
+
+.slick-prev {
+  left: 0;
+  border-top-left-radius: 4px;
+}
+
+.slick-next {
+  right: 0;
+  border-top-right-radius: 4px;
+}
+
+.slick-active {
+  background: #fff;
+  border: none;
+}
+/*# sourceMappingURL=slick_styles.css.map */

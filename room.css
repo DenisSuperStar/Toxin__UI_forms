@@ -1,0 +1,40 @@
+.room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.room__label {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 17px;
+  color: #1f2041;
+  padding-right: 5px;
+}
+
+.room__number {
+  font-size: 19px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 17px;
+  color: #1f2041;
+  padding-right: 3px;
+}
+
+.room__type {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 17px;
+  color: #1f2041;
+}
+
+.room__type--colored {
+  color: #bc9cff;
+}
+/*# sourceMappingURL=room.css.map */

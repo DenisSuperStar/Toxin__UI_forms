@@ -1,0 +1,17 @@
+.card-slider__img {
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-slider--no-arrows > .slick-list::before, .card-slider--no-arrows > .slick-list::after {
+  content: none;
+}
+
+.card-slider--no-arrows > .slick-list + .slick-next {
+  top: 0;
+}
+/*# sourceMappingURL=card-slider.css.map */

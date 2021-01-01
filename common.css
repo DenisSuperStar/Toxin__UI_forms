@@ -1,0 +1,381 @@
+@charset "UTF-8";
+/*Остановился на разборе вот этих стилей*/
+.form__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  padding-bottom: 21px;
+}
+
+.form__title--account {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 30px;
+}
+
+.form__fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.form__fields > .form__input:first-child {
+  margin-bottom: 10px;
+}
+
+/*Конец блока разбора стилей*/
+/*@media screen and (min-width: 401px) and (max-width: 719px) {
+    .form {
+        &__cost {
+            @include flexible(center, center);
+        }
+        &__type-room {
+            margin-left: auto;
+        }
+        &__paymant {
+            margin-left: 70px;
+            margin-right: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .form {
+        &--block {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .form {
+        &--block {
+            width: 380px;
+        }
+    }
+}*/
+/*
+    Переписанные стили
+*/
+.main__demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 140px;
+}
+
+.main__demo > .main__col {
+  padding-right: 40px;
+}
+
+.main__demo > .main__col:last-child {
+  padding-top: 150px;
+  padding-right: 0;
+  margin-right: auto;
+}
+
+.main__search, .main__selected-room {
+  padding: 150px 0 40px 0;
+}
+
+.main__card {
+  margin-top: 27px;
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    width: 100%;
+  }
+  .main__demo {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .main__demo > .main__col {
+    padding: 0;
+  }
+  .main__demo > .main__col:last-child {
+    padding-top: 40px;
+  }
+  .main__search, .main__selected-room, .main__sign-in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main__selected-room {
+    padding-top: 0;
+  }
+  .main__card {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main__card:last-child {
+    padding-bottom: 40px;
+  }
+}
+
+.form__title--upper {
+  padding-bottom: 0;
+}
+
+.form__content {
+  margin: 0;
+  padding: 21px 30px 31px 30px;
+  border-color: transparent;
+  border-width: 0;
+}
+
+.form__selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__people {
+  padding-top: 20px;
+}
+
+.form__choise {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.form__arrive, .form__leave, .form__guests {
+  padding-top: 5.44px;
+}
+
+.form__arrive .select__dropdown,
+.form__leave .select__dropdown {
+  z-index: 999;
+}
+
+.form__submit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 30px 30px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form__account {
+  padding-bottom: 140px;
+}
+
+.form__date-label, .form__input-date {
+  padding: 0 30px;
+}
+
+.form__date-label {
+  margin: 23.56px 0 5px 0;
+}
+
+.form__date {
+  padding-bottom: 20px;
+}
+
+.form__radio-wrapper {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+.form__email {
+  padding-top: 5px;
+}
+
+.form__password {
+  padding-top: 10px;
+}
+
+.form__sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.form__sign--upper {
+  padding-top: 0;
+}
+
+.form__cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.form__price {
+  margin-top: 20.56px;
+}
+
+.form__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.form__total + .form__submit {
+  padding: 20px 0 0 0;
+}
+
+.form__stripe {
+  margin: 0 5px 0 4px;
+}
+
+.form__toggler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 90px 0 30px;
+}
+
+.form__el-box:first-child {
+  margin-left: 30px;
+}
+
+.form__el-box:first-child .cm-radio__text-box {
+  padding-left: calc(10px * 2);
+}
+
+.form__el-box:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: calc(calc(20px * 2.5) + 20px);
+  padding-left: 20px;
+}
+
+.form__el-box:last-child .cm-radio__text-box {
+  padding-left: calc(9.74px * 2);
+}
+
+@media screen and (max-width: 767px) {
+  form {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .form__account {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 40px;
+  }
+  .form__sign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form--fixed {
+    width: 380px;
+  }
+}
+
+.price-list__item {
+  padding-bottom: 10px;
+}
+
+.price-list__item:last-child {
+  padding-bottom: 30px;
+}
+
+/*По необходимости скрываем поля отображения текущей и будущей дат*/
+.calendar__input {
+  display: none !important;
+}
+
+/*
+    Конец моих переписанных стилей
+*/
+/*# sourceMappingURL=common.css.map */

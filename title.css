@@ -1,0 +1,14 @@
+.title {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #1f2041;
+  line-height: 30px;
+  margin: 0;
+}
+
+.title--size {
+  width: 320px;
+}
+/*# sourceMappingURL=title.css.map */

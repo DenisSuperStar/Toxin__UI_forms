@@ -1,0 +1,29 @@
+@mixin number {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 17px;
+    color: #1f2041;
+}
+
+.room {
+    display: flex;
+    width: 50%;
+    &__label {
+        font-size: 14px;
+        @include number();
+        padding-right: 5px;
+    }
+    &__number {
+        font-size: 19px;
+        @include number();
+        padding-right: 3px;
+    }
+    &__type {
+        font-size: 15px;
+        @include number();
+        &--colored {
+            color: #bc9cff;
+        }
+    }
+}

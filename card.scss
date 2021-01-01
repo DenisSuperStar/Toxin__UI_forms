@@ -1,0 +1,27 @@
+@mixin flexible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 277px;
+    height: max-content;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.12);
+    border-radius: 4px;
+    &__section-paymant,
+    &__section-rating {
+        padding: 20px 17px 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__stars,
+    &__count-reviews {
+       @include flexible();
+    }
+    &__hr {
+        margin: 0 auto;
+    }
+}

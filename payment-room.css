@@ -1,0 +1,25 @@
+.payment-room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.payment-room__price {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  padding-right: 4px;
+}
+
+.payment-room__time {
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+/*# sourceMappingURL=payment-room.css.map */

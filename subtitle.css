@@ -1,0 +1,49 @@
+.subtitle {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1f2041;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle--size {
+  width: 83px;
+}
+
+.subtitle--radio {
+  padding: 0;
+  background: transparent;
+  border: none !important;
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.subtitle--radio:hover, .subtitle--radio:focus {
+  border: none !important;
+  background: transparent !important;
+  color: rgba(31, 32, 65, 0.75) !important;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-weight: normal !important;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.subtitle--radio > span:first-child {
+  -webkit-box-shadow: 0 0 0 1px #bc9cff;
+          box-shadow: 0 0 0 1px #bc9cff;
+}
+
+.subtitle--radio > span:first-child:hover, .subtitle--radio > span:first-child:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 1px #bc9cff;
+          box-shadow: 0 0 0 1px #bc9cff;
+}
+/*# sourceMappingURL=subtitle.css.map */

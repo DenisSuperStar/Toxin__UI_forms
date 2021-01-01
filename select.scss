@@ -1,0 +1,76 @@
+@mixin flexible($align, $item) {
+    display: flex;
+    justify-content: $align;
+    align-items: $item;
+}
+
+.select {
+    position: relative;
+    background: #fff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    color: rgba(31, 32, 65, 0.25);
+    width: 150px;
+    height: 44px;
+    @include flexible(flex-start, center);
+    border-radius: 4px;
+    &--long {
+        width: 320px;
+        & .select__dropdown {
+            z-index: 99;
+        }
+    }
+    &__input {
+        width: 100%;
+        height: 100%;
+        @include flexible(space-between, center);
+        padding-left: 15px;
+    }
+    &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+    &__icon {
+        width: 44px;
+        height: 44px;
+        @include flexible(center, center);
+        &::after {
+            content: "\f078";
+            font-family: 'Font Awesome 5 Pro';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+    &__dropdown {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 45px;
+        border-left: 1px solid rgba(31, 32, 65, 0.25);
+        border-right: 1px solid rgba(31, 32, 65, 0.25);
+        border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+    }
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        padding-top: 11.56px;
+        padding-left: 15px;
+        padding-bottom: 8.44px;
+        background: #fff;
+        z-index: 9999;
+    }
+}
+
+.close {
+    overflow: hidden;
+}
